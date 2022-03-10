@@ -9,7 +9,7 @@ LABEL org.label-schema.build-date=$BUILD_DATE
 LABEL org.label-schema.vcs-url="https://github.com/neicnordic/sda-helm-tests-support"
 LABEL org.label-schema.vcs-ref=$SOURCE_COMMIT
 
-RUN apt update && apt install -y openssl python3-pip postgresql-client && pip3 install pika crypt4gh s3cmd 
+RUN apt update && apt install -y openssl python3-pip postgresql-client curl && pip3 install pika crypt4gh s3cmd 
 
 USER 1000:1000
 
